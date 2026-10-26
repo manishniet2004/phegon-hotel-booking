@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 🏨 Phegon Hotel Booking & Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack hotel booking and management web application built with **Java Spring Boot**, **React.js**, and **MySQL**. This system provides seamless room browsing, secure user authentication with JWT, role-based access control (Admin & User), room management, and automated booking processing.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+### **Backend:**
+* **Java 17+** / **Spring Boot** (REST APIs, Spring Security, JWT)
+* **Spring Data JPA** / **Hibernate** (ORM & Database Management)
+* **MySQL Database** (`phegon_hotel_db`)
+* **AWS S3** (Cloud storage for room image uploads)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Frontend:**
+* **React.js** (Functional Components, Hooks)
+* **React Router** (Navigation & Protected Routes)
+* **Axios** (API Integration)
+* **Bootstrap / CSS** (Responsive UI Design)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Key Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **👤 User Features:**
+* **Authentication & Authorization:** Secure User Registration and Login using JWT tokens.
+* **Browse Rooms:** View available rooms with advanced filtering and pagination.
+* **Room Booking:** Select check-in/check-out dates, add guest details, and instantly generate a unique **Booking Confirmation Code**.
+* **Profile Management:** View personal booking history and account details.
 
-### `npm run build`
+### **🛠️ Admin Features:**
+* **Admin Dashboard:** Centralized control panel for managing hotel operations.
+* **Room Management:** Add new rooms (with cloud image uploads), update room details, or delete rooms.
+* **Booking Management:** View, search, and manage all customer bookings across the system.
+* **Role-Based Security:** Protected admin routes ensuring only authorized admin accounts can access management panels.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+phegon-hotel-booking/
+│
+├── backend/                  # Spring Boot Backend Source Code
+│   ├── src/main/java/        # Controllers, Services, Repositories, Entities
+│   └── src/main/resources/   # application.properties
+│
+└── frontend/                 # React.js Frontend Source Code
+    ├── public/
+    └── src/
+        ├── component/        # Admin, Auth, Common, Booking & Home components
+        ├── App.js
+        └── index.js
