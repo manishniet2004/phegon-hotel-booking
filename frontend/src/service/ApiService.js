@@ -3,8 +3,8 @@ import axios from "axios"
 export default class ApiService {
 
     // Dynamic BASE_URL: Automatically switches between Localhost and Render Live Backend
-    static BASE_URL = process.env.NODE_ENV === 'production'
-        ? "https://phegon-hotel-backend-app.onrender.com"
+    static BASE_URL = process.env.NODE_ENV === 'production' 
+        ? "https://phegon-hotel-backend-app.onrender.com" 
         : "http://localhost:4040"
 
     static getHeader() {
